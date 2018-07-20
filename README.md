@@ -1,2 +1,2 @@
 # Hang-Man-Game
-C++ Program code
+C Program code
