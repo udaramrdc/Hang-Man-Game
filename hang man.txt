@@ -1,26 +1,28 @@
+/*
 ***** HANGMAN GAME******
-
+*\
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
 int main()
 {
-int i,j,result=0,strike=8,k=0;
-char word[10],guess[10],a,end,let;
-printf("\nEnter the word Player1::");
-gets(word);
-system("clear");
-int len=strlen(word);
-printf("\nYour word is::");
-char new[len],unique[len],check[8];
-strcpy(unique,word);
-for(i=0;i<len;i++)
-{new[i]='_';
-printf("_ ");
-}
-a:
-printf("\nenter Y to guess word or N to guess letter::");
-char ch;
+    int i,j,result=0,strike=8,k=0;
+    char word[10],guess[10],a,end,let;
+    printf("\nEnter the word Player1::");
+    gets(word);
+    system("clear");
+    int len=strlen(word);
+    printf("\nYour word is::");
+    char new[len],unique[len],check[8];
+    strcpy(unique,word);
+    for(i=0;i<len;i++)
+    {
+       new[i]='_';
+       printf("_ ");
+    }
+    a:
+    printf("\nenter Y to guess word or N to guess letter::");
+    char ch;
 scanf("%s",&ch);
 if(ch=='y' || ch=='Y')
 {
